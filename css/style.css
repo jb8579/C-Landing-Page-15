@@ -12,7 +12,6 @@ body{
     position: relative;
     z-index: 1;
     background-attachment: fixed;
-    counter-reset: offers-list;
 }
 
 body::before{
@@ -302,6 +301,26 @@ body::before{
     top: 1px;
 }
 
+.ribbon {
+    position: absolute;
+    top: 3px;
+    left: -6px;
+    background: #ffffff;
+    clip-path: polygon(100% 0, 93% 50%, 100% 100%, 0 100%, 0 0);
+    z-index: 1;
+}
+
+.ribbon {
+    width: 140px;
+    height: 22px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    letter-spacing: 0.4px;
+    padding: 1px 0px;
+    font-family: "Poppins", sans-serif;
+}
 /* ---------------------------
     List Table Section End
 ------------------------------ */
