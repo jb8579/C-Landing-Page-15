@@ -1,0 +1,627 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    counter-reset: offers-list;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.651);
+    height: 100%;
+}
+
+
+
+/* -------------------------
+    Header Section Start
+----------------------------- */
+.topjeuxbonus-banner-content{
+    text-align: center;
+}
+
+.topjeuxbonus-banner-content > h1 {
+    font-family: "Poppins", sans-serif;
+    color: #f5f5f5;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+}
+
+.topjeuxbonus-banner-content > p{
+    font-family: "Poppins", sans-serif;
+    color: #d8d8d8;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+}
+
+.topjeuxbonus-trust-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 25px 0px 10px 0px;
+    justify-content: center;
+}
+
+.topjeuxbonus-trust-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 14px 4px 10px;
+    background: #1f1f1fc4;
+    border-radius: 4px;
+    border: 1px dashed #dcdcdc54;
+}
+
+.topjeuxbonus-trust-card > img{
+    width: 36px;
+}
+
+.topjeuxbonus-trust-card > p{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0px;
+    font-style: italic;
+}
+/* ---------------------------
+    Header Section End
+------------------------------ */
+
+
+
+/* -------------------------
+    List Table Section Start
+----------------------------- */
+.topjeuxbonus-list-table{
+    padding: 30px 0px;
+}
+
+.topjeuxbonus-table-card {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 15px;
+}
+
+.topjeuxbonus-table-card:nth-child(1){
+    background: radial-gradient(circle at 20.4% 50.8%, rgb(2 171 83) 0%, rgb(18 20 25) 74.2%);
+}
+
+.topjeuxbonus-table-card:nth-child(2){
+    background: radial-gradient(circle at 20.4% 50.8%, rgb(7, 107, 238) 0%, rgb(18 20 25) 74.2%);
+}
+
+.topjeuxbonus-table-card:nth-child(3) {
+    background: radial-gradient(circle at 20.4% 50.8%, rgb(199, 4, 10) 0%, rgb(18 20 25) 74.2%);
+}
+
+.topjeuxbonus-table-card:nth-child(4) {
+    background: radial-gradient(circle at 20.4% 50.8%, rgb(155 0 241) 0%, rgb(18 20 25) 74.2%);
+}
+
+.topjeuxbonus-table-card:nth-child(5) {
+    background: radial-gradient(circle at 20.4% 50.8%, rgb(213 10 107) 0%, rgb(18 20 25) 74.2%);
+}
+
+.topjeuxbonus-brand-name {
+    position: relative;
+    flex-shrink: 0;
+    left: 6px;
+}
+
+.topjeuxbonus-brand-img img {
+    width: 256px;
+    height: 134px;
+    border-radius: 3px 0 0 3px;
+    object-fit: contain;
+}
+
+.topjeuxbonus-ribbon {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+}
+
+.topjeuxbonus-ribbon:before {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    content: counter(offers-list);
+    counter-increment: offers-list;
+    color: #060606;
+    border-radius: 2px;
+    background: #ECEFF5;
+}
+
+.topjeuxbonus-card-main {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    margin-right: 12px;
+    grid-template-columns: auto 350px 200px;
+    grid-template-rows: auto;
+    gap: 0 18px;
+    grid-template-areas: "title facts cta-btn";
+}
+
+.topjeuxbonus-bonus-offer p {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+    align-items: center;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.topjeuxbonus-bonus-offer p > span {
+    font-size: 21px;
+    font-style: italic;
+    color: #ffd600;
+    font-weight: 600;
+}
+
+.topjeuxbonus-review-area {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 0px;
+    grid-area: facts;
+    gap: 16px;
+}
+
+.topjeuxbonus-review-grid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 120px;
+}
+
+.topjeuxbonus-rating-star > ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.topjeuxbonus-rating-star > ul > li{
+    list-style: none;
+    display: inline-flex;
+    color: #ffd915;
+    font-size: 16px;
+}
+
+.topjeuxbonus-rating span {
+    font-size: 14px;
+}
+
+.topjeuxbonus-review-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 12px;
+    margin-top: 12px;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    color: #c8c8c8;
+}
+
+.topjeuxbonus-value {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    word-spacing: 1px;
+}
+
+.topjeuxbonus-value > span{
+    font-size: 13px;
+}
+
+.topjeuxbonus-btn-area {
+    align-self: flex-start;
+    flex-shrink: 0;
+    margin-top: 28px;
+    grid-area: cta-btn;
+}
+
+
+.topjeuxbonus-list-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    padding: 0px;
+    color: #0B062B;
+    border-radius: 24px;
+    background: linear-gradient(356deg, rgb(227 142 15) 11.2%, rgb(244, 253, 0) 100.2%);
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    top: 15px;
+    transition: all 0.6s;
+}
+
+.topjeuxbonus-list-btn:hover{
+    background: linear-gradient(356deg, rgb(82, 229, 231) 10%, rgb(19, 12, 183) 100%);
+    color: #ffffff;
+}
+
+
+.topjeuxbonus-list-btn-icon {
+    font-size: 15px;
+    position: relative;
+    left: 3px;
+    top: 1px;
+}
+
+/* ---------------------------
+    List Table Section End
+------------------------------ */
+
+
+/* -------------------------
+    Section Start
+----------------------------- */
+.topjeuxbonus-context {
+    background: #fff;
+    border-radius: 15px;
+    padding: 37px 51px!important;
+}
+
+h2.topjeuxbonus-wrapper-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0px 15px 0px;
+    color: #000000;
+}
+
+p.topjeuxbonus-wrapper-p{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 15px 0px 40px 0px;
+    color: #383737;
+    line-height: 20px;
+
+}
+
+.topjeuxbonus-icon-list {
+    display: flex;
+    gap: 16px;
+    justify-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.topjeuxbonus-list-text > h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.topjeuxbonus-list-text > p{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0px;
+    margin: 0px;
+    color: #383737;
+    line-height: 20px;
+}
+
+.topjeuxbonus-list-img {
+    background-color: #000000;
+    border-radius: 10px;
+    min-width: 70px;
+    height: 65px;
+    text-align: center;
+}
+
+.topjeuxbonus-list-img > img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-27px);
+}
+/* ---------------------------
+    Section End
+------------------------------ */
+
+
+/* -------------------------
+    Main-text Section Start
+----------------------------- */
+.topjeuxbonus-main-bottom-text{
+    background: #fff;
+    border-radius: 15px;
+    padding: 37px 51px!important;
+    margin: 60px 0px;
+}
+
+.topjeuxbonus-main-bottom-text > h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 10px 0px 15px 0px;
+    color: #000000;
+}
+
+.topjeuxbonus-main-bottom-text > h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 15px 0px 5px 0px;
+    color: #000000;
+}
+
+.topjeuxbonus-main-bottom-text > p{
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 10px 0px;
+    margin: 0px;
+    color: #383737;
+    line-height: 20px;
+}
+/* ---------------------------
+    Main-text Section End
+------------------------------ */
+
+
+
+
+/* --------------------------------------- 
+    Footer Start
+------------------------------------------- */
+.topjeuxbonus-footer {
+    padding: 40px 50px;
+    background: #2b022d;
+}
+
+.topjeuxbonus-footer-logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+}
+
+.row.topjeuxbonus-footer-content-top.pb-4 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1365px;
+}
+
+.row.topjeuxbonus-footer-content-b{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1365px;
+}
+
+.footer-license-images img {
+    padding: 10px 0px 20px 0px;
+    filter: grayscale(1);
+}
+    
+footer img.topjeuxbonus-footer-ico {
+    max-width: 160px;
+}
+
+.topjeuxbonus-footer-logo > img:nth-child(1){
+    width: 50px;
+    height: 50px;
+}
+
+img.topjeuxbonus-footer-ico.anj-logo {
+    width: 110px;
+}
+
+.topjeuxbonus-footer-text > p{
+    color: #c2c2c2;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 1px;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid gainsboro !important;
+    opacity: .35 !important;
+}
+
+.topjeuxbonus-footer-link > ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    float: right;
+}
+
+.topjeuxbonus-footer-link > ul > li > a{
+    color: #c2c2c2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 1px;
+    text-decoration: none;
+}
+
+.topjeuxbonus-footer-link > ul > li > a:hover {
+    color: #c50dfd;
+    text-decoration: underline;
+}
+
+.topjeuxbonus-copyright{
+    color: #c2c2c2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 1px;
+    text-decoration: none;
+    float: right;
+}
+/* --------------------------------------------
+    Footer End
+----------------------------------------------- */
+
+
+
+/* ------------------------------------------
+    Sub Pages Start
+--------------------------------------------- */
+.topjeuxbonus-subpages{
+    padding: 40px 0px;
+    background: #42024641;
+}
+
+h2.topjeuxbonus-sub-title{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    font-style: normal;
+    padding-bottom: 12px;
+}
+
+.topjeuxbonus-subpages-context > h5{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    font-style: normal;
+    padding: 10px 0px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.topjeuxbonus-subpages-context > p{
+    color: #f3f3f3;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.topjeuxbonus-subpages-context > ul > li{
+    color: #f3f3f3;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+}
+/* -------------------------------------------
+    Sub Pages End
+--------------------------------------------- */
+
+
+
+/* --------------------------------------------
+    Warning Start
+------------------------------------------------ */
+
+.topjeuxbonus-warning {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 16px 80px 0px rgba(101, 77, 255, 0.171);
+    margin-bottom: 30px;
+}
+
+.topjeuxbonus-warning > p{
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    font-style: normal;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.topjeuxbonus-warning > p > img{
+    width: 22px;
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+}
+
+/* -------------------------------------
+    Warning End
+--------------------------------------------- */

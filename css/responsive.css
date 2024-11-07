@@ -1,0 +1,169 @@
+@media screen and (max-width: 600px) {
+    .topjeuxbonus-card-main {
+        width: auto;
+        margin: 0 24px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "title" "facts" "cta-btn";
+        gap: 19px;
+    }
+
+    .topjeuxbonus-brand-name img {
+        width: 100%;
+        height: 100px;
+        border-radius: 3px 3px 0 0;
+    }
+
+    .topjeuxbonus-table-card {
+        flex-direction: column;
+        margin-bottom: 15px;
+        border-radius: 0;
+        gap: 12px;
+    }
+
+    body {
+        background-position: 80%center;
+    }
+
+    body::before {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.795) 33%, rgba(18, 20, 25, 0.671) 56%);
+    }
+
+    .topjeuxbonus-table-card:nth-child(1) {
+        background: linear-gradient(180deg, rgb(9 48 28) 33%, rgb(6 90 46) 56%);
+    }
+
+    .topjeuxbonus-table-card:nth-child(2) {
+        background: linear-gradient(180deg, rgb(7, 107, 238) 33%, rgb(18 20 25) 56%); 
+    }
+
+    .topjeuxbonus-table-card:nth-child(3) {
+        background: linear-gradient(180deg, rgb(199, 4, 10) 33%, rgb(18 20 25) 56%);
+    }
+
+    .topjeuxbonus-table-card:nth-child(4) {
+        background: linear-gradient(180deg, rgb(155 0 241) 33%, rgb(18 20 25) 56%);
+    }
+
+    .topjeuxbonus-table-card:nth-child(5) {
+        background: linear-gradient(180deg, rgb(213 10 107) 33%, rgb(18 20 25) 56%);;
+    }
+
+    .topjeuxbonus-brand-name {
+        position: relative;
+        flex-shrink: 0;
+        left: 0px;
+        padding: 10px;
+    }
+    .topjeuxbonus-main-bottom-text{
+        padding: 30px 8px!important;
+        margin: 40px 0px 20px 0px;
+        border-radius: 0px;
+    }
+
+    .topjeuxbonus-subpages {
+        padding: 40px 0px;
+        background: #210023b0;
+    }
+
+    .topjeuxbonus-footer {
+        padding: 40px 10px;
+    }
+
+    .topjeuxbonus-main-bottom-text > h2 {
+        font-size: 22px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .topjeuxbonus-footer-link > ul {
+        gap: 8px;
+    }
+
+    .topjeuxbonus-warning > p {
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 6px;
+        padding: 4px 0px;
+    }
+
+    .topjeuxbonus-footer-link > ul > li > a {
+        font-size: 9px;
+        word-spacing: 0px;
+    }
+
+    h2.topjeuxbonus-wrapper-title {
+        font-size: 22px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .topjeuxbonus-context {
+        border-radius: 0px;
+        padding: 30px 8px!important;
+    }
+
+    .topjeuxbonus-list-img > img {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-20px);
+    }
+
+    .topjeuxbonus-list-img {
+        min-width: 50px;
+        height: 45px;
+    }
+
+    .topjeuxbonus-review-grid {
+        width: 87px;
+    }
+
+    .topjeuxbonus-rating-star > ul > li {
+        font-size: 13px;
+    }
+
+    .topjeuxbonus-review-area {
+        justify-content: center;
+    }
+
+    .topjeuxbonus-bonus-offer p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .topjeuxbonus-list-btn {
+        top: -15px;
+    }
+
+    .topjeuxbonus-banner-content > h1 {
+        font-size: 24px;
+    }
+
+    .topjeuxbonus-banner-content > p {
+        display: none;
+    }
+
+    .topjeuxbonus-trust-card > p {
+        font-size: 11px;
+    }
+
+    .topjeuxbonus-trust-card > img {
+        width: 20px;
+    }
+
+    .topjeuxbonus-trust-card {
+        gap: 6px;
+        padding: 0px;
+        background: transparent;
+        border-radius: 0px;
+        border: none;
+    }
+
+    .topjeuxbonus-trust-area {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin: 0px 0px 10px 0px;
+        justify-content: unset;
+    }
+}
